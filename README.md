@@ -1,3 +1,11 @@
-# ML Engineering Challenge
+# Mini KYC App
 
-### Welcome to Júlio's simple implementation of a know your customer app that takes an image of a bank statement, as well as some user information inserted into a simple GUI and verifies the user with the power of LLMs. 
+This is a simple KYC (Know Your Customer) application that verifies a user's identity by comparing their details with information extracted from a bank statement image. The app uses FastAPI for the backend API, Tesseract for OCR, and the OpenAI API for fuzzy matching. A basic HTML frontend allows users to enter their details and upload an image.
+
+## Features
+
+- **REST API:** Built with FastAPI.
+- **OCR Processing:** Uses Tesseract to extract text from images.
+- **Fuzzy Matching:** Compares user details with extracted data using the OpenAI API (handles common abbreviations like "St" vs. "Street").
+- **Simple Frontend:** A basic web form built with FastAPI and Jinja2.
+- **Dockerized:** Easily run the application with Docker Compose.
