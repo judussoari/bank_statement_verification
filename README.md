@@ -5,7 +5,7 @@ This is a simple KYC (Know Your Customer) application that verifies a user's ide
 ## Features
 
 - **REST API:** Built with FastAPI.
-- **OCR Processing:** Uses Tesseract to extract text from images.
+- **OCR Processing:** Uses Tesseract and the OpenAI API to extract text from images.
 - **Fuzzy Matching:** Compares user details with extracted data using the OpenAI API (handles common abbreviations like "St" vs. "Street").
 - **Simple Frontend:** A basic web form built with FastAPI and Jinja2.
 - **Dockerized:** Easily run the application with Docker Compose.
